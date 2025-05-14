@@ -1,58 +1,67 @@
-##Face Recognition
-Giới thiệu
-Dự án Face Recognition là một ứng dụng nhận diện khuôn mặt sử dụng các kỹ thuật xử lý ảnh và học máy. Dự án nhằm mục đích nhận diện và xác minh danh tính từ hình ảnh hoặc video trong thời gian thực.
+# Face Recognition
 
-Tính năng
-Nhận diện khuôn mặt từ hình ảnh hoặc webcam.
-Lưu trữ và so sánh dữ liệu khuôn mặt.
-Hỗ trợ giao diện dòng lệnh đơn giản.
-Công nghệ sử dụng
-Python 3.7+
-OpenCV: Xử lý hình ảnh.
-dlib: Nhận diện và mã hóa khuôn mặt.
-NumPy: Xử lý dữ liệu số.
-Cài đặt
-Yêu cầu
-Python 3.7 trở lên.
-Webcam (nếu sử dụng nhận diện thời gian thực).
-pip để cài đặt thư viện.
-Hướng dẫn
-Clone repository:
-bash
+## Giới thiệu
 
-Copy
-git clone https://github.com/Lochke/Face-Recognition.git
-cd Face-Recognition
-Tạo môi trường ảo:
-bash
+Dự án **Face Recognition** là một ứng dụng nhận diện khuôn mặt sử dụng các kỹ thuật xử lý ảnh và học máy. Dự án nhằm mục đích nhận diện và xác minh danh tính từ hình ảnh hoặc video trong thời gian thực.
 
-Copy
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
-Cài đặt thư viện:
-bash
+## Tính năng
 
-Copy
-pip install -r requirements.txt
-Sử dụng
-Chuẩn bị dữ liệu:
-Thêm hình ảnh khuôn mặt vào thư mục dataset/ (theo định dạng: tên_người.jpg).
-Chạy script để mã hóa khuôn mặt:
-bash
+- Nhận diện khuôn mặt từ hình ảnh hoặc webcam.
+- Lưu trữ và so sánh dữ liệu khuôn mặt.
+- Hỗ trợ giao diện dòng lệnh đơn giản.
 
-Copy
-python encode_faces.py
-Chạy nhận diện:
-bash
+## Công nghệ sử dụng
 
-Copy
-python recognize_faces.py
-Mở webcam hoặc cung cấp đường dẫn hình ảnh để nhận diện.
-Cấu trúc thư mục
-text
+- **Python 3.7+**
+- **OpenCV**: Xử lý hình ảnh.
+- **dlib**: Nhận diện và mã hóa khuôn mặt.
+- **NumPy**: Xử lý dữ liệu số.
 
-Copy
+## Cài đặt
+
+### Yêu cầu
+- Python 3.7 trở lên.
+- Webcam (nếu sử dụng nhận diện thời gian thực).
+- pip để cài đặt thư viện.
+
+### Hướng dẫn
+
+1. **Clone repository**:
+   ```bash
+   git clone https://github.com/Lochke/Face-Recognition.git
+   cd Face-Recognition
+   ```
+
+2. **Tạo môi trường ảo**:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # Linux/Mac
+   venv\Scripts\activate     # Windows
+   ```
+
+3. **Cài đặt thư viện**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Sử dụng
+
+1. **Chuẩn bị dữ liệu**:
+   - Thêm hình ảnh khuôn mặt vào thư mục `dataset/` (theo định dạng: `tên_người.jpg`).
+   - Chạy script để mã hóa khuôn mặt:
+     ```bash
+     python encode_faces.py
+     ```
+
+2. **Chạy nhận diện**:
+   ```bash
+   python recognize_faces.py
+   ```
+   - Mở webcam hoặc cung cấp đường dẫn hình ảnh để nhận diện.
+
+## Cấu trúc thư mục
+
+```
 Face-Recognition/
 ├── dataset/                # Hình ảnh khuôn mặt
 ├── encodings/              # Dữ liệu mã hóa khuôn mặt
@@ -84,3 +93,7 @@ Dự án được phát hành dưới [Giấy phép MIT](LICENSE).
    git add README.md
    git commit -m "Thêm tệp README"
    git push origin main
+   ```
+
+### Ghi chú
+- README này giả định dự án sử dụng Python, OpenCV, và dlib, phù hợp với các dự án nhận diện khuôn mặt phổ biến.
