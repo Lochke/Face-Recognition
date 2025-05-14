@@ -1,4 +1,4 @@
-Face Recognition
+##Face Recognition
 Giới thiệu
 Dự án Face Recognition là một ứng dụng nhận diện khuôn mặt sử dụng các kỹ thuật xử lý ảnh và học máy. Dự án nhằm mục đích nhận diện và xác minh danh tính từ hình ảnh hoặc video trong thời gian thực.
 
