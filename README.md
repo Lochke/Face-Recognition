@@ -94,6 +94,3 @@ Dự án được phát hành dưới [Giấy phép MIT](LICENSE).
    git commit -m "Thêm tệp README"
    git push origin main
    ```
-
-### Ghi chú
-- README này giả định dự án sử dụng Python, OpenCV, và dlib, phù hợp với các dự án nhận diện khuôn mặt phổ biến.
